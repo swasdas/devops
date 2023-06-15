@@ -6,6 +6,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing whether docker has been run successfully or not'
+        sh 'docker --version'
         sh 'node --version'
       }
     }
